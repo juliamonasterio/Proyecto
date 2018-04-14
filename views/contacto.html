@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SOLEDAD PASTORUTTI - CONTACTO</title>
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="agenda.html">Agenda</a></li>
+				<li><a href="biografia.html">Biografia</a></li>
+				<li><a href="videos.html">Videos</a></li>
+				<li><a href="discografia.html">Discografia</a></li>	
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+		<section>
+			<form action="enviar.php" method="POST">
+				<fieldset>
+					<legend>Formulario de Contacto</legend>
+					<label for="nombre">Nombre y apellido:</label>
+					<input type="text" name="nombre"/>
+					<label for="sexo">Sexo:</label>
+					<label for="fem" >Femenino</label>
+			<!-- El ID hace que si haces clic en el label también te selecciona la opción -->
+			<!-- Siempre tiene que tener el mismo nombre que en for-->
+					<input type="radio" name="sexo" id="fem" value="Femenino"/>
+					<label for="masc" >Masculino</label>
+					<input type="radio" name="sexo" id="masc" value="Masculino"/>
+					<label for="mail">Correo Electronico</label>
+					<input text="mail" name="mail" placeholder="nombre@ejemplo.com"/>
+					<label for="tipoContacto">Tipo de Contacto</label>
+					<select>
+				<!-- Value es el valor que viaja al enviar el formulario -->
+						<option value="C">Contratación</option>
+						<option value="P">Presencia</option>
+					</select>
+					<input type="submit" value="Enviar formulario"/>
+					<input type="reset" value="Limpiar formulario"/>
+				</fieldset>
+			</form>
+		</section>
+		<aside>
+		</aside>
+		<footer>
+		</footer>
+	</body>
+</html>
